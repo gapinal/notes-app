@@ -12,13 +12,19 @@ const notes = [{
 const addNewNote = NotesApp.addNewNote;
 
 // Named functions
-function getNoteById(_id) {
+function getNoteById(searchId) {
   // How can we find a note inside our notes array?
   // This should return a single note object if found;
+  notes.forEach (function(note) {
+    if (note._id === searchId) {
+      return(_id)  
+    }
+  })
 };
 
 const updateNote = function(_id, title, text, index) {
   // Replaces object in array with received one.
+  let () = `$()\n$(new id title text index)`;
 };
 
 // Declared functions
